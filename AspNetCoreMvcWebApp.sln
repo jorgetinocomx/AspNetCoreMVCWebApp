@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMvcWebApp.DataAcc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMvcWebApp.Entities", "AspNetCoreMvcWebApp.Entities\AspNetCoreMvcWebApp.Entities.csproj", "{916EF8CD-FFB7-4E41-A08F-FB1C2A8BFE66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMvcWebApp.DataAccess.Interfaces", "AspNetCoreMvcWebApp.DataAccess.Interfaces\AspNetCoreMvcWebApp.DataAccess.Interfaces.csproj", "{1609056B-CDE1-4ADF-9B6C-1CE28AF73668}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{916EF8CD-FFB7-4E41-A08F-FB1C2A8BFE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{916EF8CD-FFB7-4E41-A08F-FB1C2A8BFE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{916EF8CD-FFB7-4E41-A08F-FB1C2A8BFE66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1609056B-CDE1-4ADF-9B6C-1CE28AF73668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1609056B-CDE1-4ADF-9B6C-1CE28AF73668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1609056B-CDE1-4ADF-9B6C-1CE28AF73668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1609056B-CDE1-4ADF-9B6C-1CE28AF73668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

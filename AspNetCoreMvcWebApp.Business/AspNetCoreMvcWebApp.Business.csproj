@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AspNetCoreMvcWebApp.Business.Interfaces\AspNetCoreMvcWebApp.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\AspNetCoreMvcWebApp.DataAccess\AspNetCoreMvcWebApp.DataAccess.csproj" />
     <ProjectReference Include="..\AspNetCoreMvcWebApp.Models\AspNetCoreMvcWebApp.Models.csproj" />
   </ItemGroup>
 

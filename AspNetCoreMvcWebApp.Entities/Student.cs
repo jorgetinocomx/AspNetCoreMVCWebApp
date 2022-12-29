@@ -28,6 +28,6 @@
         /// <summary>
         /// Student enrollment.
         /// </summary>
-        ICollection<Enrollment> Enrollments { get;}
+        public ICollection<Enrollment> Enrollments { get;}
     }
 }

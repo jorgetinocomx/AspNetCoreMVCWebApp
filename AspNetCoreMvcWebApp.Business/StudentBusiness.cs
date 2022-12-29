@@ -1,4 +1,5 @@
 ﻿using AspNetCoreMvcWebApp.Business.Interfaces;
+using AspNetCoreMvcWebApp.DataAccess.Interfaces;
 using AspNetCoreMvcWebApp.Models;
 
 namespace AspNetCoreMvcWebApp.Business
@@ -8,6 +9,17 @@ namespace AspNetCoreMvcWebApp.Business
     /// </summary>
     public class StudentBusiness: IStudentBusiness
     {
+        private IStudentData _data;
+
+        /// <summary>
+        /// Inject the DataAccess object.
+        /// </summary>
+        /// <param name="data"></param>
+        public StudentBusiness(IStudentData data)
+        {
+            _data = data;
+        }
+
         /// <summary>
         /// Return some student information.
         /// </summary>
@@ -15,10 +27,11 @@ namespace AspNetCoreMvcWebApp.Business
         /// <returns>Student details.</returns>
         public StudentsDetail GetStudentDetail(int studentId)
         {
-            var fakeDetail = new StudentsDetail();
-            fakeDetail.Name = "Fake And Static name";
-            fakeDetail.Courses = new List<string> { "FakeCourse1", "FakeCourse 2" };
-            return fakeDetail;
+            var student = _data.GetStudent(studentId);
+            var studentDetail = new StudentsDetail();
+            studentDetail.Name = student.Name;
+            studentDetail.Courses = student.Enrollments.Select(enrollment => enrollment.Course.Name);
+            return studentDetail;
         }
 
     }

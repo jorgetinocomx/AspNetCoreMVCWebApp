@@ -25,7 +25,7 @@ namespace AspNetCoreMvcWebApp.Controllers
         /// <returns></returns>
         public IActionResult Index()
         {
-            var detail = _studentBusiness.GetStudentDetail(0);
+            var detail = _studentBusiness.GetStudentDetail(1);
             return View(detail);
         }
     }
