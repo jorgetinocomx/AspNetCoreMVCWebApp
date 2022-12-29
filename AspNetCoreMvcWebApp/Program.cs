@@ -1,7 +1,13 @@
+using AspNetCoreMvcWebApp.Business;
+using AspNetCoreMvcWebApp.Business.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// ADD BUSINESS SERVICES.
+builder.Services.AddScoped<IStudentBusiness, StudentBusiness>();
 
 var app = builder.Build();
 

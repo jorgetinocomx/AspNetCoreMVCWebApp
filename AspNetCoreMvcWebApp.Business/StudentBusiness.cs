@@ -1,11 +1,12 @@
-﻿using AspNetCoreMvcWebApp.Models;
+﻿using AspNetCoreMvcWebApp.Business.Interfaces;
+using AspNetCoreMvcWebApp.Models;
 
 namespace AspNetCoreMvcWebApp.Business
 {
     /// <summary>
     /// Business logic for the student.
     /// </summary>
-    public class StudentBusiness
+    public class StudentBusiness: IStudentBusiness
     {
         /// <summary>
         /// Return some student information.
