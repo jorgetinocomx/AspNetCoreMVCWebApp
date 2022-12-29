@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMvcWebApp.Models"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMvcWebApp.Business.Interfaces", "AspNetCoreMvcWebApp.Business.Interfaces\AspNetCoreMvcWebApp.Business.Interfaces.csproj", "{DD6464AD-3EC5-4018-A755-D419926185C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMvcWebApp.DataAccess", "AspNetCoreMvcWebApp.DataAccess\AspNetCoreMvcWebApp.DataAccess.csproj", "{A9D6FE1C-1F6E-457C-8B1A-363BC90AB62C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMvcWebApp.Entities", "AspNetCoreMvcWebApp.Entities\AspNetCoreMvcWebApp.Entities.csproj", "{916EF8CD-FFB7-4E41-A08F-FB1C2A8BFE66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{DD6464AD-3EC5-4018-A755-D419926185C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD6464AD-3EC5-4018-A755-D419926185C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD6464AD-3EC5-4018-A755-D419926185C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D6FE1C-1F6E-457C-8B1A-363BC90AB62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D6FE1C-1F6E-457C-8B1A-363BC90AB62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D6FE1C-1F6E-457C-8B1A-363BC90AB62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D6FE1C-1F6E-457C-8B1A-363BC90AB62C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{916EF8CD-FFB7-4E41-A08F-FB1C2A8BFE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{916EF8CD-FFB7-4E41-A08F-FB1C2A8BFE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{916EF8CD-FFB7-4E41-A08F-FB1C2A8BFE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{916EF8CD-FFB7-4E41-A08F-FB1C2A8BFE66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

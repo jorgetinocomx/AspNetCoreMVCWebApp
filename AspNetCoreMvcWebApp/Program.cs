@@ -1,5 +1,7 @@
 using AspNetCoreMvcWebApp.Business;
 using AspNetCoreMvcWebApp.Business.Interfaces;
+using AspNetCoreMvcWebApp.DataAccess;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,10 @@ builder.Services.AddControllersWithViews();
 
 // ADD BUSINESS SERVICES.
 builder.Services.AddScoped<IStudentBusiness, StudentBusiness>();
+
+/// ADD ENTITY FRAMEWORK DB CONTEXT
+builder.Services.AddDbContext<SchoolContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
